@@ -1,0 +1,718 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html
+{
+    font-size: 62.5%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+/* STARTS HEADER */
+header
+{
+    margin-top: 40px;
+    text-align: center;
+}
+
+header section
+{
+    display: flex;
+    flex-direction: column;
+}
+
+header section img
+{
+    width: 176px;
+    height: 32px;
+    margin: 0 auto;
+}
+/* END HEADER */
+
+
+/* STARTS MAIN */
+
+main #logo img
+{
+    width: 200px;
+    height: 183px;
+}
+
+main
+{
+    width: 546px;
+    height: 325px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+main
+{
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 17px;
+}
+
+main section ul div
+{
+    margin-bottom: 20px;
+}
+
+main ul li
+{
+    list-style: none;
+}
+
+main ul li a
+{
+    text-decoration: none;
+    cursor: pointer;
+    color: #3366cc;
+    font-size: 1.6rem;
+    line-height: 24px;
+    text-align: center;
+    font-weight: 700;
+}
+
+main ul li a:hover
+{
+    text-decoration: underline;
+}
+
+/* main ul li a:focus
+{
+    outline: 1px solid #36c;
+}
+ */
+
+main .languages-left li
+{
+    text-decoration: none;
+}
+
+.languages-left, .languages-right
+{
+    line-height: 1.5rem;
+}
+
+.languages-left
+{
+    margin-right: 18px !important;
+}
+
+.languages-right
+{
+    margin-right: -18px !important;
+}
+
+.l-lang-div, .r-lang-div
+{
+    position: relative;
+}
+
+main span
+{
+    font-size: 1.3rem;
+    line-height: 20.8px;
+    text-align: center;
+    color: rgb(84, 89, 93);
+}
+
+.languages-left ul div, .languages-right ul div
+{
+    cursor: pointer;
+}
+
+.a-link-below
+{
+    text-decoration: none !important;
+    color: rgb(84, 89, 93) !important;
+}
+
+/* STARTS SEARCH BOX (MAIN)*/
+
+.search-box
+{
+    justify-content: center;
+    display: flex;
+    margin-right: 70px;
+}
+
+.search-box div input
+{
+    position: absolute;
+    display: flex;
+    width: 395px;
+    border: 1.4px solid #a1a9b1;
+    height: 44px;
+    outline: none;
+    border-radius: 1px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+
+    padding: 12px;
+    padding-right: 12px;
+    padding-right: 60px;
+    font-size: 1.6rem;
+}
+
+.search-box div input:hover
+{
+    border-color: #72777c;
+}
+
+.search-box div input:focus
+{
+    border-color: #36c;
+    box-shadow: inset 0 0 0 1px;
+    outline: 0;
+}
+
+.select-language
+{
+    position: absolute;
+    background-image: url('../images/world-language.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 25px;
+    height: 24px;
+}
+
+.button-search
+{
+    position: absolute;
+    background-image: url('../images/search-reloaded.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 60px;
+    height: 44px;
+    margin: 10px;
+    margin-left: 388px;
+    cursor: pointer;
+}
+
+.button-search:focus
+{
+    outline: #3366cc;
+    border-color: #3366cc;
+}
+
+/* SEARCH BOX FINISHED (MAIN)*/
+
+/* STARTS LANGUAGE SELECTOR BOX (MAIN) */
+
+.language-selector-box
+{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    justify-content: center;
+    z-index: -1;
+}
+
+
+.language-selector-box #line-1-language
+{
+    position: relative;
+    width: 60px;
+    height: 1px;
+    background-color: #c7ccd1;
+    margin: 18px;
+    bottom: -520px;
+    left: -150px;
+}
+
+
+.language-selector-box #image-button-language
+{
+    position: absolute;
+    background-image: url('../images/box-language.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 300px;
+    top: 520px;
+    height: 36px;
+}
+
+.language-selector-box #line-2-language
+{
+    position: relative;
+    width: 60px;
+    height: 1px;
+    background-color: #c7ccd1;
+    margin: 18px;
+    bottom: -520px;
+    right: -150px;
+}
+
+/* FINISHED LANGUAGE BOX */
+
+
+
+/* START FOOTER */
+
+/* FOOTER 1 */
+
+footer
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    bottom: -175px;
+}
+
+footer a 
+{
+    color: rgb(51, 102, 204);
+    text-decoration: none;
+}
+
+footer a:hover
+{
+    text-decoration: underline;
+}
+
+footer .elements-initial-footer
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    max-width: 1400px;
+}
+
+footer div section
+{
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Lato,Helvetica,Arial,sans-serif;
+    padding: 10px;
+    padding-left: 11.9px;
+}
+
+.section-1, .section-2, .section-3, .section-4 {
+    flex: 1 0 10%; /* Adjust the flex values to control the width of each section */
+    margin: 5px;
+}
+
+
+footer #line-footer
+{
+    clear: both;
+    height: 0;
+    border-bottom: 1px solid #c8ccd1;
+    margin: 2.6px 13px;
+    margin: .26rem 1.3rem;
+    position: absolute;
+    width: 98vw;
+    top: -30px;
+}
+
+
+#element-1 span
+{
+    color: #54595d;
+    font-size: 1.3rem;
+    padding: 0 10px;
+    line-height: 21px;
+}
+
+#element-1
+{
+    position: absolute;
+    width: 350px;
+    height: 58.5px;
+    display: flex;
+}
+
+#element-2
+{
+    position: relative;
+    display: flex;
+    width: 350px;
+    height: 177.5px;
+    bottom: -252px;
+    background-color: #f8f9fa;
+    top: 110px;
+}
+
+#element-2 a
+{
+    font-size: 1.3rem;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+}
+
+#element-2 span
+{
+    position: absolute;
+    width: 280px;
+    height: 170px;
+    white-space: pre-line;
+    left: 50px;
+    padding-top: 5px;
+    font-size: 1.3rem;
+    line-height: 19.5px;
+    color: rgb(84, 89, 93);
+}
+
+#app-store li a
+{
+    position: absolute;
+    background-image: url('../images/app-store-badge.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 120px;
+    height: 40px;
+
+    left: 190px;
+    bottom: 22px;
+}
+/* 
+
+#play-store li a 
+{
+    position: absolute;
+    background-image: url('./images/google-play-badge.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 120px;
+    height: 40px;
+
+    left: 175px;
+    bottom: 22px;
+}
+
+ */
+
+ #play-store li a 
+{
+    position: absolute;
+    left: 42px;
+    bottom: 10px;
+}
+
+/* REPEAT ITEMS */
+
+.element-F {
+    display:flex;
+    align-items: center;
+}
+
+.element-F span
+{
+    display: inline-block;
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: left;
+    font-size: 12px;
+    color: rgb(84, 89, 93);
+    position: relative;
+    right: 74px;
+    left: -62px;
+}
+
+.element-F a img
+{   margin: 0 7px;
+    margin-left: auto;
+}
+
+.text-commons
+{
+    font-size: 14px;
+    position: relative;
+    bottom: 28px;
+}
+
+#element-6 span
+{
+    font-size: 13px;
+    color: rgb(84, 89, 93);
+    position: relative;
+    right: 71px;
+    bottom: 7px;
+}
+
+#element-6 a img
+{
+    position: relative;
+    margin: 0 7px;
+}
+
+#text-wikisource
+{
+    font-size: 14px;
+    position: relative;
+    bottom: 28px;
+}
+
+.section-2 div
+{
+    padding: 20px;
+}
+
+#element-7
+{
+    position: relative;
+    top: 21px;
+}
+
+#element-7 span
+{
+    font-size: 13px;
+    color: rgb(84, 89, 93);
+    position: relative;
+    right: 74px;
+    bottom: 7px;
+}
+
+#element-7 a img 
+{
+    position: relative;
+    margin: 0 7px;
+}
+
+#text-wikivoyage
+{
+    font-size: 14px;
+    position: relative;
+    bottom: 28px
+}
+
+#element-8
+{
+    position: relative;
+    top: 80.5px;
+}
+
+#element-8 span
+{
+    font-size: 13px;
+    color: rgb(84, 89, 93);
+    position: relative;
+    right: 74px;
+    bottom: 7px;
+    left: -62px;
+}
+
+#text-wikinews
+{
+    font-size: 14px;
+    position: relative;
+    bottom: 28px
+}
+
+#element-8 a img
+{
+   position: relative;
+   bottom: 8px;
+   margin: 0 7px;
+}
+
+#text-wikiquote
+{
+    font-size: 14px;
+    position: relative;
+    bottom: 28px
+}
+
+#element-9 span
+{
+    font-size: 13px;
+    color: rgb(84, 89, 93);
+    position: relative;
+    right: 74px;
+    bottom: 7px;
+    left: -65px;
+}
+
+#element-9
+{
+    position: relative;
+    top: 120px;
+}
+
+#element-9 a img
+{
+    position: relative;
+    margin: 0 7px;
+}
+
+#element-10
+{
+    position: relative;
+    top: 160px;
+}
+
+#element-10 a img
+{
+    position: relative;
+   margin: 0 7px;
+}
+
+#element-10 span
+{
+    font-size: 13px;
+    color: rgb(84, 89, 93);
+    position: relative;
+    right: 74px;
+    bottom: 7px;
+    left: -78px;
+}
+
+#text-wikispecies
+{
+    font-size: 14px;
+    position: relative;
+    bottom: 28px
+}
+
+#text-wikitionary
+{
+    font-size: 14px;
+    position: relative;
+    bottom: 28px
+}
+
+#element-11
+{
+    position: relative;
+    top: 21px;
+}
+
+#element-11 a img
+{
+    position: relative;
+    margin: 0 7px;
+
+}
+
+#element-11 span
+{
+    font-size: 13px;
+    color: rgb(84, 89, 93);
+    position: relative;
+    right: 74px;
+    bottom: 7px;
+    left: -70px;    
+}
+
+#element-12 span
+{
+    font-size: 13px;
+    color: rgb(84, 89, 93);
+    position: relative;
+    right: 74px;
+    bottom: 7px;
+    left: -57px;  
+}
+
+#text-wikidata
+{
+    font-size: 14px;
+    position: relative;
+    bottom: 28px
+}
+
+#element-12 a img
+{
+    position: relative;
+   margin: 10px 7px;
+}
+
+#element-12
+{
+    position: relative;
+    top: 60.5px;
+}
+
+#element-13 span
+{
+    font-size: 13px;
+    color: rgb(84, 89, 93);
+    position: relative;
+    right: 74px;
+    bottom: 7px;
+    left: -66px;     
+}
+
+#text-mediawiki
+{
+    font-size: 14px;
+    position: relative;
+    bottom: 28px
+}
+
+#element-13 a img
+{
+    position: relative;
+    margin: 0 7px;
+}
+
+#element-13
+{
+    position: relative;
+    top: 100px;
+}
+
+#element-14 span
+{
+    font-size: 11.5px;
+    color: rgb(84, 89, 93);
+    position: relative;
+    right: 74px;
+    bottom: 7px;
+    left: -68px;     
+}
+
+#text-metawiki
+{
+    font-size: 14px;
+    position: relative;
+    bottom: 28px;
+}
+
+#element-14 a img
+{
+    position: relative;
+    margin: 0 7px;
+}
+
+#element-14
+{
+    position: relative;
+    top: 141px
+}
+
+/* FOOTER 1 FINISHED */
+
+/* FOOTER 2 START */
+
+.text-footer {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    margin: 0 auto;
+    font-size: 13px;
+    padding: 30px 0;
+}
+
+/* FOOTER 2 FINISHED */
